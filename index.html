@@ -11,7 +11,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
-
+    <!-- font awesome cdn link -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- font family -->
      <style>
         .font-manrope{
@@ -21,10 +22,52 @@
 </head>
 <body class="font-manrope">
     <!-- header section -->
-     <header>
+     <header class="container mx-auto mt-10">
         <!-- navbar  -->
-         <nav>
-            
+         <nav class="flex justify-between items-center px-3">
+            <div class="md:flex-1 lg:flex-none">
+                <h2 class="flex items-center gap-1 text-3xl font-extrabold text-[#212121]">
+                <div class="bg-[#ABEF5F] rounded-full p-2 flex items-center justify-center">
+                    <i class="fa-solid fa-arrow-right text-xs -rotate-45"></i>
+                </div>
+                Rinterio</h2>
+            </div>
+            <div class="hidden lg:block">
+                <ul class="flex gap-9 text-base text-[#737373] ">
+                    <li><a class="hover:text-black" href="">Home</a></li>
+                    <li><a class="hover:text-black" href="">Services</a></li>
+                    <li><a class="hover:text-black" href="">Portfolio</a></li>
+                    <li><a class="hover:text-black" href="">Blogs</a></li>
+                    <li><a class="hover:text-black" href="">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="md:block hidden">
+                <div class="flex items-center  gap-3 ">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+                <button class="flex gap-3 items-center bg-[#ABEF5F] p-3 rounded-3xl text-xl font-extrabold">Book Consult
+                    <div class="bg-black rounded-full p-2 flex items-center justify-center">
+                    <i class="fa-solid fa-arrow-right text-white text-xs -rotate-45"></i>
+                    </div>
+                </button>
+            </div>
+            </div>
+            <!-- menu icon -->
+             <div class="dropdown lg:hidden block">
+                <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /> </svg>
+                </div>
+                  
+                <ul
+                    tabindex="0"
+                    class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                    <li><a class="hover:text-black" href="">Home</a></li>
+                    <li><a class="hover:text-black" href="">Services</a></li>
+                    <li><a class="hover:text-black" href="">Portfolio</a></li>
+                    <li><a class="hover:text-black" href="">Blogs</a></li>
+                    <li><a class="hover:text-black" href="">Contact Us</a></li>
+                </ul>
+            </div>
          </nav>
      </header>
      <!-- main section -->
